@@ -3,8 +3,7 @@ int arrayMode(std::vector<int> sequence) {
     int temp = 0;
     int index = 0;
 
-    int size = (sequence.size() >> 1) + 1;
-    for(int i=0; i<size; i++) {
+    for(int i=0; i<sequence.size()-1; i++) {
         for(int j=i+1; j<sequence.size(); j++) {
             if(sequence[i] == sequence[j]) {
                 count++;
